@@ -72,39 +72,24 @@ public:
 
 int main()
 {
-	//Stack<int> IntStack;
-
-	//for (int i = 1; i <= 10; ++i)
-	//{
-	//	IntStack.Push(i * 1); //Çª½¬´Â ÀÔ·Â
-	//}
-
-	//for (int i = 1; i <= 10; ++i)
-	//{
-	//	cout << IntStack.Top() << ",  "; //ÅéÀº Ãâ·Â
-	//	IntStack.Pop();		//¿øÀ§Ä¡
-	//}
-
-
+	
 	quee<float> Intque;
 
 	for (int i = 1; i <= 10; ++i)
 	{
 		Intque.Push(i * 1.1f); //Çª½¬´Â ÀÔ·Â
+		cout << Intque.Top() << endl; //ÅéÀº Ãâ·Â
 	}
-
-
 	Intque.Pop();
-	//¿øÀ§Ä¡
 
 
 	for (int i = 1; i <= 10; ++i)
 	{
-		cout << Intque.Top() << ",  "; //ÅéÀº Ãâ·Â
-		Intque.Pop2();
-
+		Intque.Push(i * 1); //Çª½¬´Â ÀÔ·Â
+		cout << Intque.Top() << endl; //ÅéÀº Ãâ·Â
 	}
-
+	Intque.Pop();
+	
 
 
 	return 0;
